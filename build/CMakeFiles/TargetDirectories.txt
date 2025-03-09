@@ -1,4 +1,0 @@
-/home/alex/projects/cpp-patterns/build/CMakeFiles/builder.dir
-/home/alex/projects/cpp-patterns/build/CMakeFiles/factory.dir
-/home/alex/projects/cpp-patterns/build/CMakeFiles/edit_cache.dir
-/home/alex/projects/cpp-patterns/build/CMakeFiles/rebuild_cache.dir
