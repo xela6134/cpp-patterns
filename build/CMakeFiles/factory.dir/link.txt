@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/factory.dir/patterns/creational/factory-method/factory-method.cpp.o -o factory 

@@ -129,6 +129,19 @@ builder/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/build
 .PHONY : builder/fast
 
+#=============================================================================
+# Target rules for targets named factory
+
+# Build rule for target.
+factory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 factory
+.PHONY : factory
+
+# fast build rule for target.
+factory/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factory.dir/build.make CMakeFiles/factory.dir/build
+.PHONY : factory/fast
+
 patterns/creational/builder/builder.o: patterns/creational/builder/builder.cpp.o
 .PHONY : patterns/creational/builder/builder.o
 
@@ -153,6 +166,30 @@ patterns/creational/builder/builder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/builder.dir/build.make CMakeFiles/builder.dir/patterns/creational/builder/builder.cpp.s
 .PHONY : patterns/creational/builder/builder.cpp.s
 
+patterns/creational/factory-method/factory-method.o: patterns/creational/factory-method/factory-method.cpp.o
+.PHONY : patterns/creational/factory-method/factory-method.o
+
+# target to build an object file
+patterns/creational/factory-method/factory-method.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factory.dir/build.make CMakeFiles/factory.dir/patterns/creational/factory-method/factory-method.cpp.o
+.PHONY : patterns/creational/factory-method/factory-method.cpp.o
+
+patterns/creational/factory-method/factory-method.i: patterns/creational/factory-method/factory-method.cpp.i
+.PHONY : patterns/creational/factory-method/factory-method.i
+
+# target to preprocess a source file
+patterns/creational/factory-method/factory-method.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factory.dir/build.make CMakeFiles/factory.dir/patterns/creational/factory-method/factory-method.cpp.i
+.PHONY : patterns/creational/factory-method/factory-method.cpp.i
+
+patterns/creational/factory-method/factory-method.s: patterns/creational/factory-method/factory-method.cpp.s
+.PHONY : patterns/creational/factory-method/factory-method.s
+
+# target to generate assembly for a file
+patterns/creational/factory-method/factory-method.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/factory.dir/build.make CMakeFiles/factory.dir/patterns/creational/factory-method/factory-method.cpp.s
+.PHONY : patterns/creational/factory-method/factory-method.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... builder"
+	@echo "... factory"
 	@echo "... patterns/creational/builder/builder.o"
 	@echo "... patterns/creational/builder/builder.i"
 	@echo "... patterns/creational/builder/builder.s"
+	@echo "... patterns/creational/factory-method/factory-method.o"
+	@echo "... patterns/creational/factory-method/factory-method.i"
+	@echo "... patterns/creational/factory-method/factory-method.s"
 .PHONY : help
 
 

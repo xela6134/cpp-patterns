@@ -45,7 +45,7 @@ class House {
  * (Base Class)
  */
 class HouseBuilder {
-public:
+ public:
     virtual ~HouseBuilder() = default;
     virtual void buildWalls() = 0;
     virtual void buildDoors() = 0;

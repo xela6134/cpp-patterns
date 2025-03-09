@@ -6,3 +6,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add executables here
 add_executable(builder patterns/creational/builder/builder.cpp)
+add_executable(factory patterns/creational/factory/factory.cpp)
